@@ -1,0 +1,19 @@
+*{
+    text-align: center;
+}
+.nav{
+    display: flex;
+    flex-direction: wrap;
+    justify-content: space-evenly;
+    width: 40rem;
+    margin: auto;
+}
+.links{
+    display: flex;
+    width: 30rem;
+    justify-content: space-evenly;
+}
+footer{
+    display: flex;
+    justify-content: space-evenly;
+}
