@@ -1,0 +1,22 @@
+*{
+    text-align: center;
+}
+.nav{
+    display: flex;
+    flex-direction: wrap;
+    justify-content: space-evenly;
+    width: 40rem;
+    margin: auto;
+    background-color: slategray;
+    padding: 10px;
+}
+.links{
+    display: flex;
+    width: 30rem;
+    justify-content: space-evenly;
+}
+a{
+    font-size: larger;
+    font-weight: bold;
+    color: antiquewhite;
+}
