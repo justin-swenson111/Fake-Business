@@ -24,6 +24,9 @@ main{
     font-size: large;
     
 }
+.warning{
+    font-size: xx-small;
+}
 footer{
     display: flex;
     justify-content: space-evenly;

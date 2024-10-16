@@ -7,6 +7,17 @@
     <link rel="stylesheet" href="CSS/index.css">
 </head>
 <body>
+    <script>
+        var searchResult=""
+        var searchBtn=document.querySelector("#Search")
+        searchBtn.addEventListener('click', checkSearch)
+        function checkSearch(){
+            searchResult=document.getElementById("TextBox").innerHTML
+            if (searchResult=="GALLERY"){
+
+            }
+        }
+    </script>
     <header>
         <div class="logo">
             <h1>O'hare Air</h1>
@@ -19,13 +30,17 @@
                 <a href="orders.html">Orders</a>
             </div>
             <div class="search">
-                <input type="text" class="search-bar">
+                <input type="text" class="search-bar" id="TextBox">
+            </div>
+            <div>
+                <input type="button" class="submit" id="Search">
             </div>
         </div>
     </header>
     <br>
     <main>
-        <p>Corporate Jargon</p>
+        <p>O'hare Air, we provide the cleanest and freshest air available</p>
+        <p class="warning">O'hare Air is not responsible for any poisoning, asthma, injuries, or illnesses of any kind caused by conusming O'Hare brand Air</p>
         <img src="" alt="logo">
     </main>
     <footer>

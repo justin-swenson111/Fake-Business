@@ -20,3 +20,36 @@ a{
     font-weight: bold;
     color: antiquewhite;
 }
+.pictures{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    margin: auto;
+    width:80%;
+    grid-template-areas: 
+    "video1 video1 video1 video1 video1 video1"
+    "img1 img1 img2 img2 img3 img3"
+    "img4 img4 img4 img5 img5 img5";
+}
+.airVideo{
+    grid-area: video1;
+}
+.pic1{
+    grid-area: img1;
+}
+.pic2{
+    grid-area: img2;
+}
+.pic3{
+    grid-area: img3;
+}
+.pic4{
+    grid-area: img4;
+}
+.pic5{
+    grid-area: img5;
+}
+footer{
+    display: flex;
+    justify-content: space-evenly;
+}
