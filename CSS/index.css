@@ -5,20 +5,34 @@
     display: flex;
     flex-direction: wrap;
     justify-content: space-evenly;
-    width: 40rem;
+    /* width: 40rem; */
     margin: auto;
     background-color: slategray;
     padding: 10px;
 }
-.links{
+.linkSub{
     display: flex;
-    width: 30rem;
+    width:40rem;
     justify-content: space-evenly;
+    margin: auto;
+}
+.links{
+    padding-left: 2rem;
+    padding-right: 2rem;
 }
 a{
     font-size: larger;
     font-weight: bold;
     color: antiquewhite;
+}
+.logo{
+    width: 45%;
+    height: 45%;
+}
+.search{
+    margin: auto;
+    padding-bottom: 1rem;
+    background-color: slategray;
 }
 main{
     font-size: large;
@@ -30,4 +44,10 @@ main{
 footer{
     display: flex;
     justify-content: space-evenly;
+}
+body{
+    background-color: #FFFFFF;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 800 800'%3E%3Cg %3E%3Ccircle fill='%23FFFFFF' cx='400' cy='400' r='600'/%3E%3Ccircle fill='%23f3fbff' cx='400' cy='400' r='500'/%3E%3Ccircle fill='%23e6f8ff' cx='400' cy='400' r='400'/%3E%3Ccircle fill='%23daf4ff' cx='400' cy='400' r='300'/%3E%3Ccircle fill='%23cdf1ff' cx='400' cy='400' r='200'/%3E%3Ccircle fill='%23BFEDFF' cx='400' cy='400' r='100'/%3E%3C/g%3E%3C/svg%3E");
+background-attachment: fixed;
+background-size: cover;
 }
