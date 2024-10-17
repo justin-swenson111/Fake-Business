@@ -2,32 +2,39 @@
     text-align: center;
 }
 header{
-    margin-bottom: 2rem;
-}
-.search{
-    margin: auto;
-    padding-bottom: 1rem;
-    background-color: slategray;
+    margin-bottom: 1rem;
 }
 .nav{
     display: flex;
     flex-direction: wrap;
     justify-content: space-evenly;
-    background-color: slategray;
-
-    width: 40rem;
     margin: auto;
+    background-color: slategray;
     padding: 10px;
 }
-.links{
+.linkSub{
     display: flex;
-    width: 30rem;
+    width:40rem;
     justify-content: space-evenly;
+    margin: auto;
+}
+.links{
+    padding-left: 2rem;
+    padding-right: 2rem;
 }
 a{
     font-size: larger;
     font-weight: bold;
     color: antiquewhite;
+}
+.logo{
+    width: 45%;
+    height: 45%;
+}
+.search{
+    margin: auto;
+    padding-bottom: 1rem;
+    background-color: slategray;
 }
 footer{
     display: flex;
