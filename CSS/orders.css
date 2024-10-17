@@ -1,13 +1,22 @@
 *{
     text-align: center;
 }
+header{
+    margin-bottom: 2rem;
+}
+.search{
+    margin: auto;
+    padding-bottom: 1rem;
+    background-color: slategray;
+}
 .nav{
     display: flex;
     flex-direction: wrap;
     justify-content: space-evenly;
+    background-color: slategray;
+
     width: 40rem;
     margin: auto;
-    background-color: slategray;
     padding: 10px;
 }
 .links{
@@ -23,4 +32,19 @@ a{
 footer{
     display: flex;
     justify-content: space-evenly;
+}
+#product1Num{
+    width: 2rem;
+}
+#product2Num{
+    width: 2rem;
+}
+.airAudio{
+    display: none;
+}
+.itemsForm{
+    margin-bottom: 3rem;
+}
+.payment{
+    margin-bottom: 3rem;
 }

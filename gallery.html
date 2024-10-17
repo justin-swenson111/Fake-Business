@@ -4,10 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/gallery.css">
+    <link rel="text/javascript" href="global.js">
+
     <title>Gallery</title>
 </head>
 <body>
         <header>
+        <script type = "text/javascript" src="global.js"></script>
+
         <div class="logo">
             <h1>O'hare Air</h1>
         </div>
@@ -15,22 +19,34 @@
         <div class="nav">
             <div class="links">
                 <a href="index.html">Home</a>
-                <a href="servcies.html">Services</a>
+                <a href="services.html">Services</a>
                 <a href="orders.html">Orders</a>
             </div>
             <div class="search">
                 <input type="text" class="search-bar">
             </div>
         </div>
+        <div class="search">
+            <form>
+            <input type="text" class="search-bar" id="TextBox">
+
+            <input type="button" class="submit" id="Search" value="Submit" onclick="checkSearch()">
+        </form>
+        </div>
     </header>
     <main>
+        <video controls type="video/mp4" class="airVideo" poster="https://causesdrivenexposure.wordpress.com/wp-content/uploads/2014/12/ohare.jpg?w=640">
+            <source src="mediaFiles/commercial.mp4">
+            <p>Your browser does not support the video tag find the video at:</p>
+            <div><a href="https://www.youtube.com/watch?v=NWZUp2KF5ls"></a></div>
+
+        </video>
         <div class="pictures">
-            <video src="" class="airVideo"></video>
             <img src="" alt="pic1" class="pic1">
-            <img src="" alt="pic2" class="pic2">
+            <img src="https://ih1.redbubble.net/image.5037034286.1424/bg,f8f8f8-flat,750x,075,f-pad,750x1000,f8f8f8.u6.jpg" alt="pic2" class="pic2">
             <img src="" alt="pic3" class="pic3">
-            <img src="" alt="pic4" class="pic4">
-            <img src="" alt="pic5" class="pic5">
+            <img src="https://64.media.tumblr.com/d30e9a8c4ec9c840cd75e664a3f15c4f/d8f0d2429346eeda-35/s1767x797/1e89088ed31078f296082e802b0e97c278add350.jpg" alt="pic4" class="pic4">
+            <img src="https://miro.medium.com/v2/resize:fit:1400/1*WEVlT2sZzoHUEY9yC1i-DQ.png" alt="pic5" class="pic5">
         </div>
     </main>
     <footer>
@@ -39,15 +55,15 @@
             <p>000-000-0000</p>
             <p>email@hotmail.com</p>
         </div>
-        <div>
-            <div class="social-media">
-                <img src="" alt="Youtube">
+        <div class="social-media">
+            <div >
+                <img src="https://i.postimg.cc/7LvXw8kP/red-youtube-logo-symbol-701751694792489qxkccchok1-removebg-preview.png" alt="Youtube">
             </div>
-            <div class="social-media">
-                <img src="" alt="Instagram">
+            <div>
+                <img src="https://i.postimg.cc/qBZspVcf/e0ce216ce3b4681f7c18767a70a1e186-removebg-preview.png" alt="Instagram">
             </div>
-            <div class="social-media">
-                <img src="" alt="Facebook">
+            <div>
+                <img src="https://i.postimg.cc/qvKXmbCP/Facebook-logo-square-removebg-preview.png" alt="Facebook">
             </div>
         </div>
     </footer>

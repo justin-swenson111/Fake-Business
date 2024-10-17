@@ -1,11 +1,13 @@
 *{
     text-align: center;
 }
+header{
+    margin-bottom: 1rem;
+}
 .nav{
     display: flex;
     flex-direction: wrap;
     justify-content: space-evenly;
-    /* width: 40rem; */
     margin: auto;
     background-color: slategray;
     padding: 10px;

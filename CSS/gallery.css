@@ -23,16 +23,22 @@ a{
 .pictures{
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 10rem);
     margin: auto;
     width:80%;
     grid-template-areas: 
-    "video1 video1 video1 video1 video1 video1"
     "img1 img1 img2 img2 img3 img3"
     "img4 img4 img4 img5 img5 img5";
 }
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
 .airVideo{
     grid-area: video1;
+    height: 10rem;
+margin: auto;
 }
 .pic1{
     grid-area: img1;
@@ -48,8 +54,15 @@ a{
 }
 .pic5{
     grid-area: img5;
+
 }
 footer{
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
+}
+.social-media{
+    display: flex;
+    flex-direction: row;
+    width:10%;
 }

@@ -5,37 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>O'hare Air</title>
     <link rel="stylesheet" href="CSS/index.css">
+    <link rel="text/javascript" href="global.js">
 </head>
 <body>
-    <script>
-        var searchResult=""
-        var searchBtn=document.querySelector("#Search")
-        searchBtn.addEventListener('click', checkSearch)
-        function checkSearch(){
-            searchResult=document.getElementById("TextBox").innerHTML
-            if (searchResult=="GALLERY"){
-
-            }
-        }
-    </script>
     <header>
+        <script type = "text/javascript" src="global.js"></script>
+
         <div>
             <h1>O'hare Air</h1>
         </div>
         <br>
         <div class="nav">
             <div class="linkSub">
-                <a href="gallery.html" class="links">Gallery</a>
-                <a href="servcies.html" class="links">Services</a>
+                <a href="gallery.html" class="links" >Gallery</a>
+                <a href="services.html" class="links">Services</a>
                 <a href="orders.html" class="links">Orders</a>
             </div>
             <div>
             </div>
         </div>
         <div class="search">
+            <form>
             <input type="text" class="search-bar" id="TextBox">
 
-            <input type="button" class="submit" id="Search">
+            <input type="button" class="submit" id="Search" value="Submit" onclick="checkSearch()">
+        </form>
         </div>
     </header>
     <br>
