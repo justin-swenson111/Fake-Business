@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function() {
         if (prod1Check==null){
             prod1Check.checked==false
         }
-    if (prod1Check.checked){
+        if (prod1Check.checked){
         amt1=prod1AmtBox.value
         if (amt1<0){
             prod1AmtBox.value=0
@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', function() {
         cost.textContent= "Cost: $" + totalCost;
         console.log(amt2)
         console.log(totalCost)
-    }
+        }
     }
     function increaseProd2(){
     if (prod2Check.checked){
@@ -38,15 +38,16 @@ document.addEventListener('DOMContentLoaded', function() {
         totalCost=amt1*20+amt2*50
         cost.textContent= "Cost: $" + totalCost;
     }
-    var purchase=document.getElementById("purchase")
-    purchase.addEventListener('click', purchaseEffects)
-
-    }
+}
+var purchase=document.getElementById("purchase")
+purchase.addEventListener('click', purchaseEffects)
 
     const aud = new Audio(mediaFiles/bad.mp4)
     function purchaseEffects(){
         alert("Audio")
         aud.play()
+        window.location.href="index.html"
+        return false
     }
   
   }, false);

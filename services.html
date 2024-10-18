@@ -5,20 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/services.css">
     <link rel="text/javascript" href="search.js">
+    <title>Services</title>
 
-    <title>Servcies</title>
 </head>
 <body>
     <header>
         <script type = "text/javascript" src="search.js"></script>
 
-        <div>
+        <div class="headerFlex">
+            <img src="https://i.postimg.cc/BvrXh3r7/ohare-removebg-preview.png" alt="logo" class="headerLogo">
             <h1>O'hare Air</h1>
         </div>
         <br>
         <div class="nav">
             <div class="linkSub">
-                <a href="iindex.html" class="links">Home</a>
+                <a href="index.html" class="links">Home</a>
                 <a href="gallery.html" class="links" >Gallery</a>
                 <a href="orders.html" class="links">Orders</a>
             </div>
@@ -27,42 +28,65 @@
         </div>
         <div class="search">
             <form>
-            <input type="text" class="search-bar" id="TextBox">
+            <input type="text" class="search-bar" id="TextBox" onchange="Recommended()">
 
-            <input type="button" class="submit" id="Search" value="Submit" onclick="checkSearch()">
+            <input type="button" class="submit" id="Search" value="Search" onclick="checkSearch()">
         </form>
         </div>
     </header>
     <main>
         <article>
-            <h1>purpose</h1>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et, aspernatur.</p>
+            <h1>Purpose</h1>
+            <p>Our purpose is to bring improved air quality to your home, all in the size of a normal plastic water bottle! Here in O'Hare Air, we made air both affordable and accessible to all members of our community.</p>
+            <p>Our founder, Aloysius O'Hare, is very passionate about the wellfare of the people, big and small, young and old. And when he saw the high dangers of polution, he knew something had to be done fast.  
+            And that was the push towards the founding of the company. We started small, literally speaking. We started with baby bottles, soda cans, any container we could think of, until we began to think big and got to the 
+            different sizes and services we have today. Now, Mr. O'Hare does everything we can, and is beginning to expand to other parts of the world aboard his blimp.</p>
             <h1>Prices</h1>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et, aspernatur.</p>
+            <p>Our prices usually vary depending on the services you want, and the size of the air bottle size that you desire for your home.</p>
 
             <h1>Special Requests</h1>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et, aspernatur.</p>
+            <p>We offer multiple different things here in O'Hare Air! The services we offer are listed, but not limited to:</p>
+            <p>
+                <ul>
+                    <li>O'Hare Plus: This is a current work in progress from the company. Join this monthly membership to receive discounts, Air Points, and notifications on sales. Receive rewards the more you purchase from us!</li>
+                    <li>Installation: For just $250.83/mo or flat out $2508.33/yr, you can have someone install the air for YOU! Yes, you!!</li>
+                </ul>
+            </p>
 
         </article>
-        <aside>
-            <h1>Reviews</h1>
+        <aside class="reviews">
+            <h1>Reviews and Testimonials</h1>
+            <p>Phoebe- ⭐⭐⭐⭐⭐</p>
+            <p>"Oh my GOODNESS! This saved my date night since I used it as my hair dryer. Tysm, O'Hare Air!"</p>
+            <p>Audrey- ⭐</p>
+            <p>"SAVE THE TREES! LET THEM GROW!&#128544;"</p>
+            <p>Bernice Wiggins- ⭐⭐⭐⭐⭐</p>
+            <p>"I LOVE what you did by putting air in small containers! Makes me want to use the disco feature on the trees!"</p>
+            <p>Ted-⭐⭐⭐</p>
+            <p>"Why can't we just... Breathe?"</p>
         </aside>
     </main>
     <footer>
-        <p>Copyright: me</p>
+        <p>© O'Hare Air inc., All right reserved</p>
         <div>
             <p>000-000-0000</p>
             <p>email@hotmail.com</p>
         </div>
-        <div>
-            <div class="social-media">
-                <img src="" alt="Youtube">
+        <div class="social-media">
+            <div >
+                <a href="www.youtube.com" target="_blank">
+                    <img src="https://i.postimg.cc/7LvXw8kP/red-youtube-logo-symbol-701751694792489qxkccchok1-removebg-preview.png" alt="Youtube">
+                </a>
             </div>
-            <div class="social-media">
-                <img src="" alt="Instagram">
+            <div>
+                <a href="www.instagram.com" target="_blank">
+                    <img src="https://i.postimg.cc/qBZspVcf/e0ce216ce3b4681f7c18767a70a1e186-removebg-preview.png" alt="Instagram">
+                </a>
             </div>
-            <div class="social-media">
-                <img src="" alt="Facebook">
+            <div>
+                <a href="www.facebook.com" target="_blank">
+                    <img src="https://i.postimg.cc/qvKXmbCP/Facebook-logo-square-removebg-preview.png" alt="Facebook">
+                </a>
             </div>
         </div>
     </footer>

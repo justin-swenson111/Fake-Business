@@ -3,6 +3,8 @@
 }
 header{
     margin-bottom: 1rem;
+    position: sticky;
+
 }
 .nav{
     display: flex;
@@ -11,6 +13,15 @@ header{
     margin: auto;
     background-color: slategray;
     padding: 10px;
+}
+.headerFlex{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.headerLogo{
+    width:100px;
+    height: 100px;
 }
 .linkSub{
     display: flex;
@@ -21,11 +32,31 @@ header{
 .links{
     padding-left: 2rem;
     padding-right: 2rem;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    border: 3px solid black;
+    border-radius: 30%;
+    background-color: rgb(93, 120, 147);
+    text-decoration: none;
+}
+.links:hover{
+    position: relative;
+    animation: hovering 0.5s forwards;
+}
+@keyframes hovering{
+    0%{
+        top:0px;
+    }
+    100% {
+        top:10px;
+        background-color: rgb(64, 84, 105);
+    }
 }
 a{
     font-size: larger;
     font-weight: bold;
-    color: antiquewhite;
+    color: white;
+
 }
 .logo{
     width: 45%;
@@ -35,6 +66,8 @@ a{
     margin: auto;
     padding-bottom: 1rem;
     background-color: slategray;
+    padding-top: 10px;
+
 }
 main{
     font-size: large;
@@ -52,4 +85,14 @@ body{
 background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 800 800'%3E%3Cg %3E%3Ccircle fill='%23FFFFFF' cx='400' cy='400' r='600'/%3E%3Ccircle fill='%23f3fbff' cx='400' cy='400' r='500'/%3E%3Ccircle fill='%23e6f8ff' cx='400' cy='400' r='400'/%3E%3Ccircle fill='%23daf4ff' cx='400' cy='400' r='300'/%3E%3Ccircle fill='%23cdf1ff' cx='400' cy='400' r='200'/%3E%3Ccircle fill='%23BFEDFF' cx='400' cy='400' r='100'/%3E%3C/g%3E%3C/svg%3E");
 background-attachment: fixed;
 background-size: cover;
+}
+.social-media{
+    display: flex;
+    flex-direction: row;
+    width:10%;
+}
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }

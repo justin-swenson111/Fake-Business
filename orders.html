@@ -11,7 +11,8 @@
 <body>
     <header>
         <script type = "text/javascript" src="orders.js"></script>
-        <div>
+        <div class="headerFlex">
+            <img src="https://i.postimg.cc/BvrXh3r7/ohare-removebg-preview.png" alt="logo" class="headerLogo">
             <h1>O'hare Air</h1>
         </div>
         <br>
@@ -26,13 +27,13 @@
         </div>
         <div class="search">
             <form>
-            <input type="text" class="search-bar" id="TextBox">
+            <input type="text" class="search-bar" id="TextBox" onchange="Recommended()">
 
-            <input type="button" class="submit" id="Search" value="Submit" onclick="checkSearch()">
+            <input type="button" class="submit" id="Search" value="Search" onclick="checkSearch()">
         </form>
         </div>
     </header>
-    <main>
+    <main class="orders">
         <form class="itemsForm">
             <div class="prod1">
                 <div>
@@ -52,22 +53,37 @@
                 <label for="product2Num">$50</label>
             </div>
         </form>
-
         <div>
             <h3 id="cost">Cost: $</h3>
         </div>
+    <div class="spacing">
         <form class="payment">
             <div>
                 <input type="radio" id="payment1" name="paymentmMethodGroup">
-                <label for="payment1">payment method 1</label>
+                <label for="payment1">MasterCard</label>
             </div>
             <div>
                 <input type="radio" id="payment2" name="paymentmMethodGroup">
-                <label for="payment2">payment method 2</label>
+                <label for="payment2">Visa</label>
             </div>
             <div>
                 <input type="radio" id="payment3" name="paymentmMethodGroup">
-                <label for="payment3">payment method 3</label>
+                <label for="payment3">Paypal</label>
+            </div>
+        </form>
+    </div>
+        <form class="CardInfo">
+            <div>
+                <label for="cardNum">Card Number</label>
+                <input type="number" id="cardNum">
+            </div>
+            <div>
+                <label for="cardSec">Card Verificaiton Value</label>
+                <input type="number" id="cardSec">
+            </div>
+            <div>
+                <label for="cardExp">Card Expiration</label>
+                <input type="number" id="cardExp">
             </div>
         </form>
         <form class="delivery">
@@ -91,20 +107,26 @@
         </audio>
     </main>
     <footer>
-        <p>Copyright: me</p>
+        <p>© O'Hare Air incorporated, All right reserved</p>
         <div>
             <p>000-000-0000</p>
             <p>email@hotmail.com</p>
         </div>
-        <div>
-            <div class="social-media">
-                <img src="" alt="Youtube">
+        <div class="social-media">
+            <div >
+                <a href="www.youtube.com" target="_blank">
+                    <img src="https://i.postimg.cc/7LvXw8kP/red-youtube-logo-symbol-701751694792489qxkccchok1-removebg-preview.png" alt="Youtube">
+                </a>
             </div>
-            <div class="social-media">
-                <img src="" alt="Instagram">
+            <div>
+                <a href="www.instagram.com" target="_blank">
+                    <img src="https://i.postimg.cc/qBZspVcf/e0ce216ce3b4681f7c18767a70a1e186-removebg-preview.png" alt="Instagram">
+                </a>
             </div>
-            <div class="social-media">
-                <img src="" alt="Facebook">
+            <div>
+                <a href="www.facebook.com" target="_blank">
+                    <img src="https://i.postimg.cc/qvKXmbCP/Facebook-logo-square-removebg-preview.png" alt="Facebook">
+                </a>
             </div>
         </div>
     </footer>

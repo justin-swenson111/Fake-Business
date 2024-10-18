@@ -2,6 +2,7 @@
     // Create a variable to put the search result in
     var searchBtn=document.getElementById("Search")
     // set the button to a variable
+    var searchBar=document.getElementById("TextBox")
     var searchDatabase = 
     {"SEARCH":["GALLERY", "SERVICES", "ORDERS", "HOME"],
         "SOURCE":["gallery.html","services.html","orders.html","index.html"],
@@ -13,7 +14,7 @@ searchBtn.addEventListener('click', checkSearch)
 // detect when the button is pressed and run the function checkSearch
 
 function checkSearch(){
-    searchResult=document.getElementById("TextBox").value.toUpperCase()
+    searchResult=searchBar.value.toUpperCase()
     // take the input of the text box and make it uppercase
     for (let i =0; i<4; i++){
         if (searchResult==searchDatabase.SEARCH[i]){
@@ -23,5 +24,24 @@ function checkSearch(){
         }
     }
     return false
+}
+searchBar.addEventListener('change', Recommended)
+
+function Recommended(){
+    searchResult=searchBar.value.toUpperCase()
+    var length = searchResult.text.length
+    for (let i = 0; i < 4; i++){
+        if (searchResult==searchDatabase.SEARCH[i].slice(0,length)){
+            searchBtn.value=searchDatabase.SEARCH[i]
+        }
+    }
+
+}
+let searchDatabase = 
+{"SEARCH":["GALLERY", "SERVICES", "ORDERS", "HOME"],
+    "SOURCE":["gallery.html","services.html","orders.html","index.html"],
+}
+for (let i = 0; i < 4; i++){
+ console.log(searchDatabase.SEARCH[i])
 }
 
