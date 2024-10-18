@@ -1,3 +1,4 @@
+document.addEventListener('DOMContentLoaded', function() {
     var searchResult
     // Create a variable to put the search result in
     var searchBtn=document.getElementById("Search")
@@ -23,25 +24,49 @@ function checkSearch(){
             // If it does send to the corresponding page
         }
     }
+    searchBar.value=""
     return false
 }
-searchBar.addEventListener('change', Recommended)
+var searchBar=document.getElementById("TextBox")
+var recom = document.getElementById("recom")
+
+recom.onclick = function() {RecommendedSearch()}
+searchBar.onkeyup = function() {Recommended()}
+
 
 function Recommended(){
     searchResult=searchBar.value.toUpperCase()
-    var length = searchResult.text.length
-    for (let i = 0; i < 4; i++){
-        if (searchResult==searchDatabase.SEARCH[i].slice(0,length)){
-            searchBtn.value=searchDatabase.SEARCH[i]
+    var correct =false
+    var len = searchResult.length
+    for (let i=0; i<4; i++){
+        var Check = searchDatabase.SEARCH[i].slice(0,len)
+        if (searchResult==Check && Check!=""){
+            // alert(Check)
+            correct=true
+            recom.value=searchDatabase.SEARCH[i]
+        }
+        else if(correct==false){
+            recom.value=""
+        }
+        }
+    if (searchResult==""){
+        recom.value=""
+    }
+    console.log(correct)
+}
+
+function RecommendedSearch(){
+    searchResult=searchBar.value.toUpperCase()
+    var len = searchResult.length
+    for (let i=0; i<4; i++){
+        var Check = searchDatabase.SEARCH[i].slice(0,len)
+        if (searchResult==Check && Check!=""){
+            window.location.href=searchDatabase.SOURCE[i]
+
         }
     }
+}
 
-}
-let searchDatabase = 
-{"SEARCH":["GALLERY", "SERVICES", "ORDERS", "HOME"],
-    "SOURCE":["gallery.html","services.html","orders.html","index.html"],
-}
-for (let i = 0; i < 4; i++){
- console.log(searchDatabase.SEARCH[i])
-}
+}, false);
+
 

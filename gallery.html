@@ -23,16 +23,21 @@
                 <a href="services.html" class="links">Services</a>
                 <a href="orders.html" class="links">Orders</a>
             </div>
-            <div>
-            </div>
+        <div class="searchBox">
+            <form class="search">
+                <div>
+                    <input type="text" class="search-bar" id="TextBox" >
+                    <input type="button" class="submit" id="Search" value="Search" onclick="checkSearch()">
+                </div>
+                <div class="break"></div>
+                <div>
+                    <input type="button" class="recommended" id="recom" value="">
+                </div>
+                
+                </form>
         </div>
-        <div class="search">
-            <form>
-            <input type="text" class="search-bar" id="TextBox" onchange="Recommended()">
+    </div>
 
-            <input type="button" class="submit" id="Search" value="Search" onclick="checkSearch()">
-        </form>
-        </div>
     </header>
     <main>
         <video controls type="video/mp4" class="airVideo" poster="https://causesdrivenexposure.wordpress.com/wp-content/uploads/2014/12/ohare.jpg?w=640">
