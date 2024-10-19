@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // create a dictionary for ease of searching
 
 
-searchBtn.addEventListener('click', checkSearch)
+searchBtn.onclick= function(){checkSearch()} 
 // detect when the button is pressed and run the function checkSearch
 
 function checkSearch(){
@@ -44,9 +44,12 @@ function Recommended(){
             // alert(Check)
             correct=true
             recom.value=searchDatabase.SEARCH[i]
+            recom.style.visibility='visible'
         }
         else if(correct==false){
             recom.value=""
+            recom.style.visibility='hidden'
+
         }
         }
     if (searchResult==""){

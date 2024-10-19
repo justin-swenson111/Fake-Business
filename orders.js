@@ -1,4 +1,3 @@
-
 document.addEventListener('DOMContentLoaded', function() {
     var amt1=0
     var amt2=0
@@ -12,16 +11,13 @@ document.addEventListener('DOMContentLoaded', function() {
 
     var cost=document.getElementById("cost")
 
-    prod1Check.addEventListener('change', increaseProd1)
-    prod1AmtBox.addEventListener('change', increaseProd1)
+    prod1Check.onchange = function(){ increaseProd1()}
+    prod1AmtBox.onchange = function(){ increaseProd1()}
 
-    prod2Check.addEventListener('change', increaseProd2)
-    prod2AmtBox.addEventListener('change', increaseProd2)
+    prod2Check.onchange = function(){ increaseProd2()}
+    prod2AmtBox.onchange = function(){ increaseProd2()}
 
     function increaseProd1(){
-        if (prod1Check==null){
-            prod1Check.checked==false
-        }
         if (prod1Check.checked){
             if (prod1AmtBox.value<0){
                 prod1AmtBox.value=0
@@ -60,7 +56,7 @@ document.addEventListener('DOMContentLoaded', function() {
         cost.textContent= "Cost: $" + totalCost;
     }
     var purchase=document.getElementById("purchase")
-    purchase.addEventListener('click', purchaseEffects)
+    purchase.onclick =function() {purchaseEffects()} 
 
     function purchaseEffects(){
         setInterval(function(){window.location.href="index.html"}, 3100)
@@ -68,5 +64,4 @@ document.addEventListener('DOMContentLoaded', function() {
          audio.play();
 
     }
-  
-  }, false);
+}, false);
