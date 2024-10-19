@@ -105,12 +105,25 @@ background-size: cover;
 footer{
     display: flex;
     justify-content: space-evenly;
+    margin-top: 5rem;
+    border: 4px solid rgb(195, 220, 233);
+    background-color: rgb(195, 220, 233);
+    border-radius: 4px;
+    padding: 4px;
 }
 #product1Num{
     width: 2rem;
 }
 #product2Num{
     width: 2rem;
+}
+#product3Num{
+    width:0px;
+    visibility: collapse;
+}
+#product4Num{
+    width:0px;
+    visibility: collapse;
 }
 .cardNum{
     grid-area: Num;
@@ -137,6 +150,8 @@ footer{
 #cardName{
     width:24rem;
 }
+/* adding a class and ID for each card input so i can edit the actual input
+and put it in a div so it can go in the grid */
 
 .itemsForm{
     margin-bottom: 3rem;
@@ -163,8 +178,8 @@ footer{
     ;
 }
 .spacing{
-    position: relative;
-    left:40%
+margin: auto;
+width: 15%;
 }
 
 .social-media{

@@ -128,6 +128,11 @@ footer{
     display: flex;
     justify-content: space-evenly;
     clear: left;
+    margin-top: 5rem;
+    border: 4px solid rgb(195, 220, 233);
+    background-color: rgb(195, 220, 233);
+    border-radius: 4px;
+    padding: 4px;
 }
 aside{
     display: flex;
