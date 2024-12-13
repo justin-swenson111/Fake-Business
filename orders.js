@@ -90,9 +90,9 @@ document.addEventListener('DOMContentLoaded', function() {
     purchase.onclick =function() {purchaseEffects()} 
 
     function purchaseEffects(){
-        setInterval(function(){window.location.href="index.html"}, 3100)
-        var audio = new Audio('mediaFiles/bad.mp3');
-         audio.play();
+        //setInterval(function(){window.location.href="index.html"}, 3100)
+        //var audio = new Audio('mediaFiles/bad.mp3');
+         //audio.play();
 
     }
 }, false);
